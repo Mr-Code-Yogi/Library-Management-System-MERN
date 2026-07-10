@@ -29,7 +29,7 @@ function App() {
           <Route exact path='/dashboard@admin'>
             {user ? (user.isAdmin === true ? <AdminDashboard /> : <Redirect to='/' />) : <Redirect to='/' />}
           </Route>
-          <Route exact path='/books'>
+          <Route exact path='/mybooks'>
             <Allbooks />
           </Route>
         </Switch>
